@@ -12,9 +12,9 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    DIR *dir = opendir(argv[4]);
+    DIR *dir = opendir(argv[3]);
     if (dir == NULL) {
-        printf("opendir with %s failed\n", argv[4]);
+        printf("opendir with %s failed\n", argv[3]);
         return 1;
     }
     printf("Your code is running.\n");

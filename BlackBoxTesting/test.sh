@@ -150,4 +150,3 @@ echo -e "Execution time of Parallel (Par_400000_400_files8_3): $(($(($end2-$star
 
 speedup=$(echo "scale=2; $(($end1-$start1)) / $(($end2-$start2))" | bc)
 echo -e "Test 4 Speed-up (Sequential/Parallel): $speedup times."
-
