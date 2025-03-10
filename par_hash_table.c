@@ -11,6 +11,9 @@ int main(int argc, char *argv[]) {
         fprintf(stderr, "usage: %s <N> <K> <directory> <output_file> <value>\n", argv[0]);
         return 1;
     }
+    
+    int n = atoi(argv[1]);
+    printf("%d\n", n);
 
     DIR *dir = opendir(argv[3]);
     if (dir == NULL) {
